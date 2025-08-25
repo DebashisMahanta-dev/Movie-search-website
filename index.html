@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="bg-poster" class="bg-poster" src="" alt="Background Poster" style="display:none;" />
+    <div id="modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>CineBuzz
+            
+        </h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for a movie..." required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="loading" class="loading" style="display:none;">Loading...</div>
+        <div id="results" class="results"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
